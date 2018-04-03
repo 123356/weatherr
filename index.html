@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,
+	maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/rem.js"></script>
+	<script src="js/jQuery.js"></script>
+	<link rel="icon" href="image/logo.ico" type="image/x-icon">
+	<title>天气</title>
+</head>
+<body>
+	<!-- 当前信息 -->
+	<section id="now">
+		<!-- 当前城市 -->
+		<h1 class="now_city">
+			<span class="address_icon">&#xe611;</span>
+			<span class="now_cityname"></span>
+		</h1>
+		<!-- 当前空气质量 -->
+		<div class="now_air">
+			<h1>空气</h1>
+			<h2></h2>
+		</div>
+		<!-- 当前温度 -->
+		<h2 class="now_temp">
+			<span></span>°
+		</h2>
+		<!-- 当前天气 -->
+		<h3 class="now_weather"></h3>
+		<!-- 当前风况 -->
+		<h4 class="now_wind">
+			<span class="now_winddirect"></span>
+			<span class="now_windpower"></span>
+		</h4>
+		<!-- 温馨提示 -->
+		<h5 class="now_notice"></h5>
+	</section>
+
+	<!-- 未来两天天气信息 -->
+	<section id="future">
+		<div class="future_box today">
+			<div class="future_top">
+				<span class="future_date">今天</span>
+				<p>
+					<span class="today_hightemp"></span>/
+					<span class="today_lowtemp"></span>°C
+				</p>
+			</div>
+			<div class="future_top">
+				<span class="future_weather"></span>
+				<div class="today_image">
+				</div>
+			</div>
+		</div>
+		<div class="future_box tomrrow">
+			<div class="future_top">
+				<span class="future_date">明天</span>
+				<p>
+					<span class="tomrrow_hightemp"></span>/
+					<span class="tomrrow_lowtemp"></span>°C
+				</p>
+			</div>
+			<div class="future_top">
+				<span class="tomrrow_weather"></span>
+				<div class="tomrrow_image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 二十四小时 -->
+	<ul id="hours">
+	</ul>
+
+	<!-- 未来天气 -->
+	<ul id="day">
+	</ul>
+
+	<main id="citys">
+		<!-- 搜索栏 -->
+		<header>
+			<input type="text" class="citys_search" placeholder="请输入搜索内容">
+			<h2 class="btn">取消</h2>
+		</header>
+
+		<div class="citys_content">
+			<div class="citys_hot">
+				<p>热门城市</p>
+				<div class="citys_list">
+					<div class="citys_hot_name">
+						<span class="citys_text">北京</span>
+					</div>
+					<div class="citys_hot_name">
+						<span class="citys_text">上海</span>
+					</div>
+					<div class="citys_hot_name">
+						<span class="citys_text">太原</span>
+					</div>
+					<div class="citys_hot_name">
+						<span class="citys_text">四川</span>
+					</div>
+					<div class="citys_hot_name">
+						<span class="citys_text">杭州</span>
+					</div>
+					<div class="citys_hot_name">
+						<span class="citys_text">西安</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="citys_commonly">
+			</div>
+		</div>
+	</main>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
+<!-- rem 根节点字体大小进行变化
+em 当前元素大小变化 -->
